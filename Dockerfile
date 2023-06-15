@@ -1,4 +1,4 @@
-FROM <docker image red-based os>
+FROM <docker image redhat-based os>
 LABEL org.label-schema.schema-version=7.3.2 org.label-schema.name=REDOS_Base_Image
 CMD ["/bin/bash"]
 RUN dnf update -y && dnf -y install curl augeas bsdtar unzip && dnf clean all
